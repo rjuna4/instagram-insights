@@ -9,8 +9,6 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import AppProjects from "./Pages/AppProjects";
-import WebProjects from "./Pages/WebProjects";
 import Contact from "./Pages/Contact";
 
 function App() {
