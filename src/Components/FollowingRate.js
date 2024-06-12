@@ -5,14 +5,6 @@ import { Bar } from "react-chartjs-2";
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
-// const accounts = following.relationships_following.flatMap(item => 
-//     item.string_list_data.map(account => ({
-//       href: account.href,
-//       value: account.value,
-//       timestamp: account.timestamp
-//     }))
-//   );
-
 const FollowingRate = () => {
     const [monthlyData, setMonthlyData] = useState([]);
 
@@ -66,14 +58,9 @@ const FollowingRate = () => {
     return (
         <div>
             <h1>Instagram Following Rate Over the Past Year</h1>
-            <Bar data={chartData} style={barStyle} />
+            <Bar data={chartData}/>
         </div>
     );
 };
 
 export default FollowingRate;
-
-const barStyle = {
-//     height: "80px",
-//   width: "80px",
-  };

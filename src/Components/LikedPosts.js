@@ -56,15 +56,15 @@ const LikedPosts = () => {
             {
                 label: 'Liked Posts from Followed Accounts',
                 data: monthlyData.map(item => item.followed),
-                backgroundColor: 'rgba(75, 192, 192, 0.6)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgb(75, 192, 192, 0.6)',
+                borderColor: 'rgb(75, 192, 192, 1)',
                 borderWidth: 1,
             },
             {
                 label: 'Liked Posts from Non-Followed Accounts',
                 data: monthlyData.map(item => item.notFollowed),
-                backgroundColor: 'rgba(255, 99, 132, 0.6)',
-                borderColor: 'rgba(255, 99, 132, 1)',
+                backgroundColor: 'rgb(172, 156, 255, 0.6)',
+                borderColor: 'rgb(172, 156, 255, 1)',
                 borderWidth: 1,
             }
         ]
