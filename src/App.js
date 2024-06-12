@@ -10,6 +10,7 @@ import {
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import Footer from "./Components/Footer.js";
 
 function App() {
   return (
@@ -22,11 +23,11 @@ function App() {
                 <Route path="/" element={<Navigate to="/Home" />} />
                 <Route exact path="/Home" element={<Home />} />
                 <Route path="/About" element={<About />} />
-                <Route path="/Contact" element={<Contact />}
-                />
             </Routes>
         </Router>
       </header>
+      <Footer>
+      </Footer>
     </div>
   );
 }
