@@ -13,9 +13,6 @@ const Navbar = () => {
                     <NavLink to="/About" activeStyle>
                         About
                     </NavLink>
-                    <NavLink to="/Contact" activeStyle>
-                        Contact
-            </NavLink>
             </Nav>
         </>
     );
@@ -27,7 +24,7 @@ const Nav = styled.nav`
     background: #ac9cff;
     height: 85px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.2rem calc((100vw - 1000px) / 2);
     z-index: 12;
 `;
@@ -43,5 +40,6 @@ const NavLink = styled(Link)`
     cursor: pointer;
     &.active {
         color: #423874;
+        font-weight: bold;
     }
 `;
